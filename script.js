@@ -63,7 +63,7 @@ function main(){
     var sijp = document.getElementById("sijp").value;
     var segSoc = document.getElementById("segSoc").value;
 
-    if ((menor17(birthDate) && perteneceSIJP(sijp)) || actividadSegSoc(segSoc)){
+    if (menor17(birthDate) && (perteneceSIJP(sijp) || actividadSegSoc(segSoc))){
         alert("Debe sacarse el CUIL")
     }else{
         alert("No debe sacar el CUIL");
